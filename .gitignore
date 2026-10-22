@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+config.json
+downloads/
+processed/
+scratch/
+telethon_session.session
+logs/post_history.json
+logs/tracker.json
+logs/cadence_experiment.json

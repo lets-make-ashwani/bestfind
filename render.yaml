@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: bestfindautobot
+    env: docker
+    plan: free
+    region: oregon
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: TELEGRAM_API_ID
+        value: 28675574
+      - key: TELEGRAM_API_HASH
+        value: b4086c0ad6e85161beef7a23df4ef3b5
+      - key: TELEGRAM_CHANNEL
+        value: allterapost
+      - key: TELEGRAM_STRING_SESSION
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: META_PAGE_ID
+        value: "255894584272909"
+      - key: META_PAGE_NAME
+        value: "best find"
+      - key: META_PAGE_TOKEN
+        sync: false
+      - key: AMAZON_AFFILIATE_TAG
+        value: tech6s-21
+      - key: CADENCE_MODE
+        value: 7_DAY_EXPERIMENT
+      - key: MONGODB_URI
+        sync: false
+      - key: MONGODB_DATABASE
+        value: best_find
